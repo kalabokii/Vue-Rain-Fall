@@ -1,6 +1,6 @@
 {
-  "name": "vue-rain-fall",
-  "version": "0.0.2",
+  "name": "kalaboki/vue-rain-fall",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/vue-rain-fall.umd.js",
   "module": "dist/vue-rain-fall.es.js",
