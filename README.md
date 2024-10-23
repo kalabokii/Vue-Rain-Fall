@@ -1,33 +1,60 @@
-# idk
+# Vue Rain Fall
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 library for creating a beautiful rain effect.
 
-## Recommended IDE Setup
+## Installation
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+npm install vue-rain-fall
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
-npm run dev
+```vue
+<script setup>
+  import { Rain } from 'vue-rain-fall';
+
+</script>
+
+<template>
+  <Rain />
+</template>
+
+```
+## Props 
+
+You can customize the rain effect by passing props to the Rain component.
+
+### drops-per-frame:
+- type: Number
+- default: 1
+
+### fallSpeed:
+- type: Number
+- default: 3
+
+### wind:
+- type: Number
+- default: 0
+
+## Slots
+
+### #drop
+
+```vue
+<script setup>
+import { Rain } from 'vue-rain-fall';
+</script>
+
+<template>
+  <Rain>
+    <template #drop>
+      <div class="drop"></div>
+    </template>
+  </Rain>
+</template>
 ```
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
-```
+
+

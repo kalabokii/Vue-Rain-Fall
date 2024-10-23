@@ -1,7 +1,7 @@
 {
   "name": "vue-rain-fall",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "main": "dist/vue-rain-fall.umd.js",
   "module": "dist/vue-rain-fall.es.js",
   "type": "module",

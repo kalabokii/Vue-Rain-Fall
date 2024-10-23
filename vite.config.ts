@@ -14,9 +14,9 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: "src/index.js",
-      name: "VueRainFall",
-      fileName: (format) => `vue-rain-fall.${format}.ts`,
+      entry: "src/index.ts",
+      name: "Rain",
+      fileName: (format) => `vue-rain-fall.${format}.js`,
     },
   },
 });
